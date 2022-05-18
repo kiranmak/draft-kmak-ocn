@@ -76,7 +76,8 @@ Table of Contents
      3.1.  Controller Point Interface (CP)
      3.2.  Actuation Point Interface (AP):
      3.3.  Sensor Point (SP)
-   4.  Characteristics of Messages over OCNs
+   4.  OCN Message Characteristics
+     4.1.  In-time messages:
    5.  Northbound Application Interface
    6.  IANA Considerations
    7.  Security Considerations
@@ -257,24 +258,25 @@ Table of Contents
 
                +----------+ +---------+
                | Actuator | | Sensor  |
+               | Point    | | Point   |
                +---^------+ +-----^---+
                    |              |
-                   |AP            | SP
+                   |AP-I          | SP-I
                +---v--------------v-----+
                | Operations & Control   |
                |       Network (OCN)    |
                +-----------^------------+
-                           | CP
+                           |
                    +-------v------+
                    | Controller   |
-                   |   Access     |
+                   |   Point      |
                    +--------------+
                          ^
                          | Northbound interface to controller
                          V
                    ---------------
-                   Applications
-                   -------------
+                   | Applications |
+                   ---------------
 
        Figure 1: Operations & Control Networks(OCN) - Reference Model
 
@@ -366,10 +368,14 @@ Table of Contents
    per the requested periodicity.  It supports largely periodic but
    asynchronous communications as well.
 
-4.  Characteristics of Messages over OCNs
+4.  OCN Message Characteristics
 
    The interfaces carry specific type of messages and are described as
-   follows: ## In-time messages: ## On-time messages
+   follows:
+
+4.1.  In-time messages:
+
+   ## On-time messages
 
 5.  Northbound Application Interface
 

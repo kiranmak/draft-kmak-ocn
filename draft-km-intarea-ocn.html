@@ -1144,7 +1144,12 @@ standardized mechanisms will facilitate large-scale machine-to-machine communica
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-characteristics-of-messages" class="xref">Characteristics of Messages over OCNs</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-ocn-message-characteristics" class="xref">OCN Message Characteristics</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-in-time-messages" class="xref">In-time messages:</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-northbound-application-inte" class="xref">Northbound Application Interface</a></p>
@@ -1284,24 +1289,25 @@ Note 2: Do we really need sensor and actuator interface separate. Can they not b
 <pre class="lang-drawing sourcecode">
             +----------+ +---------+
             | Actuator | | Sensor  |
+            | Point    | | Point   |
             +---^------+ +-----^---+
                 |              |
-                |AP            | SP
+                |AP-I          | SP-I
             +---v--------------v-----+
             | Operations &amp; Control   |
             |       Network (OCN)    |
             +-----------^------------+
-                        | CP
+                        |
                 +-------v------+
                 | Controller   |
-                |   Access     |
+                |   Point      |
                 +--------------+
                       ^
                       | Northbound interface to controller
                       V
                 ---------------
-                Applications
-                -------------
+                | Applications |
+                ---------------
 </pre>
 </div>
 <figcaption><a href="#figure-1" class="selfRef">Figure 1</a>:
@@ -1346,12 +1352,18 @@ Controller OCN Interface is required to support traffic profiles with time const
 </div>
 <div id="characteristics">
 <section id="section-4">
-      <h2 id="name-characteristics-of-messages">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-characteristics-of-messages" class="section-name selfRef">Characteristics of Messages over OCNs</a>
+      <h2 id="name-ocn-message-characteristics">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-ocn-message-characteristics" class="section-name selfRef">OCN Message Characteristics</a>
       </h2>
-<p id="section-4-1">The interfaces carry specific type of messages and are described as follows:
-## In-time messages:
-## On-time messages<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-1">The interfaces carry specific type of messages and are described as follows:<a href="#section-4-1" class="pilcrow">¶</a></p>
+<div id="in-time-messages">
+<section id="section-4.1">
+        <h3 id="name-in-time-messages">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-in-time-messages" class="section-name selfRef">In-time messages:</a>
+        </h3>
+<p id="section-4.1-1">## On-time messages<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
 </section>
 </div>
 <div id="northbound-application-interface">
