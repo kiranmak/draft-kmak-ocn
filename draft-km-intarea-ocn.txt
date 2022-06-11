@@ -660,9 +660,17 @@ Table of Contents
               DOI 10.17487/RFC8655, October 2019,
               <https://www.rfc-editor.org/rfc/rfc8655>.
 
-   [NIST-OT]  "*** BROKEN REFERENCE ***".
+   [NIST-OT]  Initiative, J. T. F. T. and National Institute of
+              Standards and Technology, "Risk management framework for
+              information systems and organizations:",
+              DOI 10.6028/nist.sp.800-37r2,
+              <http://dx.doi.org/10.6028/nist.sp.800-37r2>.
 
-   [PTP-GRID] "*** BROKEN REFERENCE ***".
+   [PTP-GRID] IEEE, "IEC/IEEE International Standard - Communication
+              networks and systems for power utility automation – Part
+              9-3: Precision time protocol profile for power utility
+              automation", DOI 10.1109/ieeestd.2016.7479438,
+              <http://dx.doi.org/10.1109/ieeestd.2016.7479438>.
 
    [TSNTG]    "IEEE, "Time-Sensitive Networking (TSN) Task Group"",
               2018, <https://1.ieee802.org/tsn>.
