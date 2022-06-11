@@ -9,11 +9,11 @@
 <meta content="Tooba Faisal" name="author">
 <meta content="
        This text formulates a specialized network concept to support communication constraints in automated systems. These
-specialized networks, called Operations and Control networks (OCN), are significant to many application scenarios
+specialized networks, formulated as Operations and Control networks (OCN), are significant to many application scenarios
 involving the control and monitoring of mechanical and digital devices. The document defines the OCN reference model,
-describing the associated components, interfaces, and reference points. The generalization of OCN concepts and
-compute-intensive applications and end-machine. The reference model is independent of any specific technology.
-standardized mechanisms will facilitate large-scale machine-to-machine communication and help with integration between 
+describing the associated components, interfaces, and reference points.
+The reference model is independent of any specific technology.
+Standardized mechanisms will facilitate large-scale machine-to-machine communication and help with the integration between OCN and the Internet. 
     " name="description">
 <meta content="xml2rfc 3.12.10" name="generator">
 <meta content="Internet-Draft" name="keyword">
@@ -1036,7 +1036,7 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Makhijani &amp; Faisal</td>
-<td class="center">Expires 11 December 2022</td>
+<td class="center">Expires 13 December 2022</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1044,17 +1044,17 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">Independent Submission</dd>
+<dd class="workgroup">Internet Area Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
 <dd class="internet-draft">draft-km-intarea-ocn-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2022-06-09" class="published">9 June 2022</time>
+<time datetime="2022-06-11" class="published">11 June 2022</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2022-12-11">11 December 2022</time></dd>
+<dd class="expires"><time datetime="2022-12-13">13 December 2022</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1072,11 +1072,11 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">This text formulates a specialized network concept to support communication constraints in automated systems. These
-specialized networks, called Operations and Control networks (OCN), are significant to many application scenarios
+specialized networks, formulated as Operations and Control networks (OCN), are significant to many application scenarios
 involving the control and monitoring of mechanical and digital devices. The document defines the OCN reference model,
-describing the associated components, interfaces, and reference points. The generalization of OCN concepts and
-compute-intensive applications and end-machine. The reference model is independent of any specific technology.
-standardized mechanisms will facilitate large-scale machine-to-machine communication and help with integration between<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+describing the associated components, interfaces, and reference points.
+The reference model is independent of any specific technology.
+Standardized mechanisms will facilitate large-scale machine-to-machine communication and help with the integration between OCN and the Internet.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -1108,7 +1108,7 @@ standardized mechanisms will facilitate large-scale machine-to-machine communica
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 11 December 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 13 December 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1230,13 +1230,13 @@ standardized mechanisms will facilitate large-scale machine-to-machine communica
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-ocn-examples-and-realizatio" class="xref">OCN Examples and Realizations</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.1">
-                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="xref">6.1</a>.  <a href="#name-level-one-operations-and-co" class="xref">Level one Operations and Control</a></p>
+                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="xref">6.1</a>.  <a href="#name-physical-layer" class="xref">Physical Layer</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
-                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="xref">6.2</a>.  <a href="#name-local-area-operations-and-c" class="xref">Local Area Operations and Control</a></p>
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="xref">6.2</a>.  <a href="#name-media-layer" class="xref">Media Layer</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.3">
-                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="xref">6.3</a>.  <a href="#name-large-scale-network-level-o" class="xref">Large Scale Network Level Operations and Control</a></p>
+                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="xref">6.3</a>.  <a href="#name-network-layer" class="xref">Network Layer</a></p>
 </li>
             </ul>
 </li>
@@ -1264,10 +1264,10 @@ standardized mechanisms will facilitate large-scale machine-to-machine communica
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">A number of applications require specialized networks to perform operations (on controller devices) that change
+<p id="section-1-1">A number of applications require specialized networks to perform operations that change
 or monitor the behavior of equipment and the environment in which they operate. Such application domains benefit from software-driven
 process automation with the ability to control and detect changes remotely.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Traditionally, equipment related control processes and monitoring mechanisms are associated with the production plants and manufacturing environments. Besides growth in the Internet of Things (IoT)
+<p id="section-1-2">Traditionally, equipment related control processes and monitoring mechanisms are associated with the production plants and manufacturing environments. Moreover, growth in the Internet of Things (IoT)
 has broadened the role of operations, control, and process automation into  a
 diverse set of market verticals and commercial applications.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">For example, residents can
@@ -1288,7 +1288,7 @@ and monitor changes to the end-equipment. Each OCN connection is designed or
 provisioned to fulfill the traffic characteristics with stringent time and
 reliability constraints such as protecting bounded latency and not allowing
 packet losses.<a href="#section-1-7" class="pilcrow">¶</a></p>
-<p id="section-1-8">OCN, itself is not a new concept. Other industrial network technologies that
+<p id="section-1-8">OCN, itself is not a new concept in itself. Other industrial network technologies that
 would be classified as OCN are available, albeit with limited functionalities
 and at a smaller scale. Whereas, demand for improvements in process automation at a large scale is growing across diverse
 applications. Thus,  a broader and more generalized approach will benefit several industry verticals.<a href="#section-1-8" class="pilcrow">¶</a></p>
@@ -1311,14 +1311,14 @@ Programmable systems or devices that interact with the physical environment (or 
 interact with the physical environment). These systems/devices detect or cause a
 direct change through the monitoring and/or control of devices, processes,
 and events. Examples include industrial control systems, building management systems,
-fire control systems, and physical access control mechanisms. Source: NIST<a href="#section-2-1.1" class="pilcrow">¶</a>
+fire control systems, and physical access control mechanisms. Source: <span>[<a href="#NIST-OT" class="xref">NIST-OT</a>]</span><a href="#section-2-1.1" class="pilcrow">¶</a>
 </li>
         <li class="normal" id="section-2-1.2">Industry Automation:
 Mechanisms that enable the machine-to-machine communication by use of technologies
 that enable automatic control and operation of industrial devices and processes leading
 to minimizing human intervention.<a href="#section-2-1.2" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-2-1.3">Control Loop: Control loops are part of process control systems in with desired process
+        <li class="normal" id="section-2-1.3">Control Loop: Control loops are part of process control systems in which desired process
 response is provided as an input to the controller, which performs the corresponding action
 (using actuators) and reads the output values.  Since no error correction is performed,
 these are called open control loops.<a href="#section-2-1.3" class="pilcrow">¶</a>
@@ -1335,7 +1335,7 @@ between fieldbus devices, digital controllers and software applications<a href="
 </li>
         <li class="normal" id="section-2-1.6">Human Machine Interface:
 An interface between the operator and the machine. The communication interface relays
-I/O data back and forth between an operator's terminal anf HMI software to control and monitor equipment.<a href="#section-2-1.6" class="pilcrow">¶</a>
+I/O data back and forth between an operator's terminal and HMI software to control and monitor equipment.<a href="#section-2-1.6" class="pilcrow">¶</a>
 </li>
       </ul>
 <div id="acronyms">
@@ -1347,6 +1347,10 @@ I/O data back and forth between an operator's terminal anf HMI software to contr
 <li class="normal" id="section-2.1-1.1">HMI: Human Machine Interface<a href="#section-2.1-1.1" class="pilcrow">¶</a>
 </li>
           <li class="normal" id="section-2.1-1.2">OCN: Operations and Control Networks<a href="#section-2.1-1.2" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-2.1-1.3">PLC: Programmable Logic Control<a href="#section-2.1-1.3" class="pilcrow">¶</a>
+</li>
+          <li class="normal" id="section-2.1-1.4">OT: Operational Technology<a href="#section-2.1-1.4" class="pilcrow">¶</a>
 </li>
         </ul>
 </section>
@@ -1366,13 +1370,13 @@ I/O data back and forth between an operator's terminal anf HMI software to contr
 <p id="section-3.1-1">The Operations and Control Networks are defined as follows:<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <ul class="normal ulEmpty">
 <li class="normal ulEmpty" id="section-3.1-2.1">
-            <p id="section-3.1-2.1.1">An Operation and Control Network (OCN) supports all the capabilities necessary to
+            <p id="section-3.1-2.1.1">An Operation and Control Network (OCN) is a network that supports all the capabilities necessary to
 accomplish a process or control command execution on actuators for the desired
 effect prescribed by the controllers based on continuous inputs from the sensory data
 and application requests.<a href="#section-3.1-2.1.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-3.1-3">The functional components of OCN are actuators, sensors and controllers. They
+<p id="section-3.1-3">An OCN is used to connect three basic types of functional devices - actuators, sensors and controllers. They
 are well-known in the industry control systems (ICS) and are generalized to
 include all kinds of OCN scenarios.
 The sensors and the actuators are associated with physical, logical, or digital
@@ -1384,31 +1388,24 @@ for the exchange of data to trigger and monitor changes to achieve desired effec
             <p id="section-3.1-4.1.1">Note: the term "OCN field device" will be used to represent actuator and sensors together.<a href="#section-3.1-4.1.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-3.1-5">In the OCN, field devices have broader meaning than the Internet of
-Things (IoT) since all field devices may or may not be directly connected to
-the network. For example, legacy fieldbus devices that are connected to a PLC
-through a serial bus and do not directly interface with the  network. Sensors
-are devices that respond to a physical  (such as heat, light, sound, pressure,
-magnetism, or a particular motion) or digital (software errors or thresholds)
-change and report measured values.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
-<p id="section-3.1-6">OCN relates to Operational Technology (OT) in ICS and extends it. While OT
-networks are commonly engineered over a limited range in a specific area, OCNs
+<p id="section-3.1-5">OCN relates to Operational Technology (OT) in ICS and extends it. While OT
+networks are commonly engineered over a limited physical range in a geographic area, OCNs
 improve upon conventional OT by supporting large-scale network layer connectivity
 paradigms.
 Logically, OCNs facilitate connectivity across larger geographical areas, for instance,
  beyond factory premises covering several cloud and edge scenarios in which
  components are disaggregated or are not co-located. Of course, physical distance
- limits still apply to applications with strict requirement of control command completion.<a href="#section-3.1-6" class="pilcrow">¶</a></p>
-<p id="section-3.1-7">OCN provides inter-networking or mechanisms to interact between
+ limits still apply to applications with strict requirement of control command completion.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
+<p id="section-3.1-6">OCN provides inter-networking or mechanisms to interact between
 controlling and monitoring components (that maybe remote) with the field
-devices close to the operating machinery and the equipment.<a href="#section-3.1-7" class="pilcrow">¶</a></p>
-<p id="section-3.1-8">The OCNs support different types of messages across these function elements. The
+devices close to the operating machinery and the equipment.<a href="#section-3.1-6" class="pilcrow">¶</a></p>
+<p id="section-3.1-7">The OCNs support different types of messages across these function elements. The
 message data sent from controller to actuator is smaller than a typical network
 payload. Packet delivery must be guaranteed by the OCN.
-Additionally, the OCN should support and advertise mechanisms to eliminate packet losses.<a href="#section-3.1-8" class="pilcrow">¶</a></p>
-<p id="section-3.1-9">Most common attributes amon OCN enabled applications are
+Additionally, the OCN should support and advertise mechanisms to eliminate packet losses.<a href="#section-3.1-7" class="pilcrow">¶</a></p>
+<p id="section-3.1-8">Most common attributes among OCN enabled applications are
 different types of guarantees of time for different operations, safety of those operations, and the reliability of data delivered. In addition security and privacy are also more critical than the general-pupose applications.
-These characteristics of these messages is covered in Section <a href="#characteristics" class="xref">Section 5</a>.<a href="#section-3.1-9" class="pilcrow">¶</a></p>
+These characteristics are covered in Section <a href="#characteristics" class="xref">Section 5</a>.<a href="#section-3.1-8" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="reference-model">
@@ -1416,20 +1413,15 @@ These characteristics of these messages is covered in Section <a href="#characte
         <h3 id="name-reference-model">
 <a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-reference-model" class="section-name selfRef">Reference Model</a>
         </h3>
-<p id="section-3.2-1">The functional components in the OCN reference model are called Actuator Point, Sensor Point, and Controller Point.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.2-1">The following three reference points for OCNs are of interest: Actuator Point, Sensor Point, and Controller Point.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
 <ul class="normal ulEmpty">
 <li class="normal ulEmpty" id="section-3.2-2.1">
             <p id="section-3.2-2.1.1">Note: Suggestions on naming anything is OK. I am not happy with any of these names.<a href="#section-3.2-2.1.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<ul class="normal ulEmpty">
-<li class="normal ulEmpty" id="section-3.2-3.1">
-            <p id="section-3.2-3.1.1">Note 2: Do we really need sensor and actuator interface separate. Can they not be merged?<a href="#section-3.2-3.1.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
 <span id="name-operations-control-networks"></span><div id="ocn-model">
 <figure id="figure-1">
-          <div id="section-3.2-4.1">
+          <div id="section-3.2-3.1">
 <pre class="lang-drawing sourcecode">
             +----------+ +---------+
             | Actuator | | Sensor  |
@@ -1447,7 +1439,7 @@ These characteristics of these messages is covered in Section <a href="#characte
                 |   Point      |
                 +--------------+
                       ^
-                      | APL-I
+                      | API
                       V
                 ---------------
                 | Applications |
@@ -1458,24 +1450,24 @@ These characteristics of these messages is covered in Section <a href="#characte
 <a href="#name-operations-control-networks" class="selfRef">Operations &amp; Control Networks(OCN) - Reference Model</a>
           </figcaption></figure>
 </div>
-<p id="section-3.2-5">An 'operation' in OCN can be any of the following -<a href="#section-3.2-5" class="pilcrow">¶</a></p>
+<p id="section-3.2-4">An 'operation' in OCN can be any of the following -<a href="#section-3.2-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.2-6.1">accessing information from the field-sensors,<a href="#section-3.2-6.1" class="pilcrow">¶</a>
+<li class="normal" id="section-3.2-5.1">accessing information from the field-sensors,<a href="#section-3.2-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.2-6.2">writing command data,<a href="#section-3.2-6.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.2-5.2">writing command data,<a href="#section-3.2-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-3.2-6.3">reading back from the actuators.<a href="#section-3.2-6.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-3.2-5.3">reading back from the actuators.<a href="#section-3.2-5.3" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.2-7">The <a href="#ocn-model" class="xref">Figure 1</a> above is a reference model for the OCN. An application executes
+<p id="section-3.2-6">The <a href="#ocn-model" class="xref">Figure 1</a> above is a reference model for the OCN. An application executes
 operation on field-devices over OCN to monitor specific and/or overall state of the system; An operation may involve realizing
-feedback control loop between the controller, actuating and sensory devices.<a href="#section-3.2-7" class="pilcrow">¶</a></p>
-<p id="section-3.2-8">The OCN Reference model is extended to accommodate a variety of access networks. In fact, it serves as convergent network to
+feedback control loop between the controller, actuating and sensory devices.<a href="#section-3.2-6" class="pilcrow">¶</a></p>
+<p id="section-3.2-7">The OCN Reference model is extended to accommodate a variety of access networks. In fact, it serves as convergent network to
 integrate communication across different technology specific networks. Consider it as a specialized network infrastructure (shared or dedicated)
 that interconnects different other OT-enabled access networks. Some of the examples of OT-enabled networks are Ethernet/IP,
 Profinet, TSN <span>[<a href="#TSNTG" class="xref">TSNTG</a>]</span>, Detnet<span>[<a href="#DETNET-ARCH" class="xref">DETNET-ARCH</a>]</span>, 5G radio, private 5G, etc. As is implied that each of these technologies
-are by themselves capable of supporting  some of the properties of OCN which in turn provides a comprehensive approach to integration of these technologies at large-scale to build a converged framework.<a href="#section-3.2-8" class="pilcrow">¶</a></p>
-<p id="section-3.2-9">A generalized OCN model supports the following logical connection points:<a href="#section-3.2-9" class="pilcrow">¶</a></p>
+are by themselves capable of supporting  some of the properties of OCN which in turn provides a comprehensive approach to integration of these technologies at large-scale to build a converged framework.<a href="#section-3.2-7" class="pilcrow">¶</a></p>
+<p id="section-3.2-8">A generalized OCN model supports the following logical connection points:<a href="#section-3.2-8" class="pilcrow">¶</a></p>
 <div id="controller-point-cp">
 <section id="section-3.2.1">
           <h4 id="name-controller-point-cp">
@@ -1488,9 +1480,9 @@ jitter variance, bandwidth, and specification for safety.
 The CPs should have knowledge about these capabilities from the OCNs in order to
 meet their packet delivery constraints.
 Since OCNs are expected to  be shared among different applications with their own
-set of KPI, a controller should be is used to express it's specific
+set of KPI, a controller should be used to express its specific
 requirements in the OCN. Moreover, each command from controller may have to indicate its own KPI.<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.2.1-2">An important aspect of controller function element is that it integrate with the
+<p id="section-3.2.1-2">An important aspect of the controller function element is that it integrates with the
 application infrastructure and provides a standard interface with them. Optionally, it may be an application in itself.<a href="#section-3.2.1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1499,7 +1491,7 @@ application infrastructure and provides a standard interface with them. Optional
           <h4 id="name-actuation-point-ap">
 <a href="#section-3.2.2" class="section-number selfRef">3.2.2. </a><a href="#name-actuation-point-ap" class="section-name selfRef">Actuation Point (AP)</a>
           </h4>
-<p id="section-3.2.2-1">An actuation point i the functional element which receives actuator specific commands and is used for the communication between the actuator devices
+<p id="section-3.2.2-1">An actuation point is the functional element which receives actuator specific commands and is used for the communication between the actuator devices
 and controllers. The OCN enables control of actuating devices remotely from the
 controller by meeting all the requirements (KPIs) necessary for a successful command
 execution. The actuator participates in closed control loop over OCN with CP when necessary.<a href="#section-3.2.2-1" class="pilcrow">¶</a></p>
@@ -1512,7 +1504,7 @@ is called AP-I (see <a href="#api-desc" class="xref">Section 4.1</a>).<a href="#
           <h4 id="name-sensor-point-sp">
 <a href="#section-3.2.3" class="section-number selfRef">3.2.3. </a><a href="#name-sensor-point-sp" class="section-name selfRef">Sensor Point (SP)</a>
           </h4>
-<p id="section-3.2.3-1">The sensor point's main function is to emit periodic data from the sensors. It
+<p id="section-3.2.3-1">The sensor point is the point where sensor connects to. Its main function is to emit periodic data from the sensors. It
 may intermittently provide asynchronous readings upon request from the
 controller.<a href="#section-3.2.3-1" class="pilcrow">¶</a></p>
 <p id="section-3.2.3-2">A sensor point is the functional element from where sensory data is emitted
@@ -1535,16 +1527,16 @@ is called SP-I (see <a href="#spi-desc" class="xref">Section 4.2</a>).<a href="#
       <h2 id="name-ocn-communication-interface">
 <a href="#section-4" class="section-number selfRef">4. </a><a href="#name-ocn-communication-interface" class="section-name selfRef">OCN Communication Interfaces</a>
       </h2>
-<p id="section-4-1">OCN interfaces enable communication between its functional elements, two specific interfaces are defined below. Additionally, an application to CP interface is also anticipated to express application logic in common format.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-1">OCN interfaces enable communication between its reference points; two specific interfaces are defined below. Additionally, an application to CP interface is also anticipated to express application logic.<a href="#section-4-1" class="pilcrow">¶</a></p>
 <div id="api-desc">
 <section id="section-4.1">
         <h3 id="name-actuator-point-interface">
 <a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-actuator-point-interface" class="section-name selfRef">Actuator Point Interface</a>
         </h3>
 <p id="section-4.1-1">Interface between CP and AP is called AP-I. It
-carries out communication between the actuation points and the controllers.
-The Actuators are designed to write and then read-back parameters or values.
-Thus, the message may be request write and then read-back in reply type. The
+carries out communication between the actuation points and the controller points.
+The Actuators are designed to receive "control command" from controllers and perform corresponding action or change to the equipment. Those commands can be abstracted as writes and then read-back of values.
+Thus, the message may be request write and then request read-back in reply. The
 high-precision timing and delivery of such messages must be met in either direction independently.  This interface is a bidirectional and the model allows more than one
 controller interacting with the AP.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
 </section>
@@ -1556,8 +1548,8 @@ controller interacting with the AP.<a href="#section-4.1-1" class="pilcrow">¶</
         </h3>
 <p id="section-4.2-1">Interface between CP and SP is called SP-I. It describes the set of
    messages permitted between the sensor points and controller points. The Sensors
-   may be programmed to send periodic sensory data may do at
-   specified intervals. There may als be other cases, in which the controller may
+   may be programmed to send periodic sensory data at
+   specified intervals. There may also be other cases, in which the controller may
     .solicit reading values. The interface should be a bi-directional and more than on controller can request sensor data.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
 <span id="name-interfaces-in-ocn"></span><div id="ocn-ifs">
 <figure id="figure-2">
@@ -1616,7 +1608,7 @@ controller interacting with the AP.<a href="#section-4.1-1" class="pilcrow">¶</
 <a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-application-interface" class="section-name selfRef">Application Interface</a>
         </h3>
 <p id="section-4.3-1">An application domain combines everythin - the application logic, group of actuators, sensors and one or more controllers.
-With in the application domain the interface between controller and application logic is called application interface (APL-I). The APL-I allows applications to request specific outcomes or data from the field devices through the CPs. It is possible to have controller point embedded in an application, in such cases this interface may not be needed.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+With in the application domain the interface between controller and application logic is called application interface (API). The API allows applications to request specific outcomes or data from the field devices through the CPs. It is possible to have controller point embedded in an application, in such cases this interface may not be needed.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1627,18 +1619,18 @@ With in the application domain the interface between controller and application 
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-ocn-characteristics" class="section-name selfRef">OCN Characteristics</a>
       </h2>
 <p id="section-5-1">The characteristics of OCN differentiate it from the general purpose networks of
-today which provide end user (humans or non-critical applications) connectivity to plethora of services (web, media streaming, data transfers, e-commerce etc), often not involving machine-to-machine type communications.<a href="#section-5-1" class="pilcrow">¶</a></p>
+today which provide the end user (humans or non-critical applications) connectivity to a plethora of services (web, media streaming, data transfers, e-commerce etc), rarely involving machine-to-machine type communications.<a href="#section-5-1" class="pilcrow">¶</a></p>
 <p id="section-5-2">These characteristics include the type of communication messages and other key aspects of OCNs.<a href="#section-5-2" class="pilcrow">¶</a></p>
 <div id="msgs">
 <section id="section-5.1">
         <h3 id="name-ocn-message-classification">
 <a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-ocn-message-classification" class="section-name selfRef">OCN Message Classification</a>
         </h3>
-<p id="section-5.1-1">The OC-Networks are designed for the real-time applications with the assurance of
-successful command execution.  The time or high-precision requirements can be classified in three different ways - in-time (the message arrives before a specified time), on-time (the message arrives not before the specified time) and bounded time (the message is arrives in a given range of specified time window).<a href="#section-5.1-1" class="pilcrow">¶</a></p>
+<p id="section-5.1-1">The OCNs are designed for the real-time applications with the assurance of
+successful command delivery.  The time or high-precision requirements can be classified in three different ways - in-time (the message arrives before a specified time), on-time (the message arrives exactly at the specified time) and bounded time (the message is arrives in a given range of specified time window).<a href="#section-5.1-1" class="pilcrow">¶</a></p>
 <p id="section-5.1-2">Another consideration about the message delivery in OCNs concern with the target of a message, i.e. that parameter represents communication time or processing time i.e. an end-to-end execution of commands.<a href="#section-5.1-2" class="pilcrow">¶</a></p>
 <p id="section-5.1-3">The functional behavior of OCN can be explained through
-classification of messages is described below.<a href="#section-5.1-3" class="pilcrow">¶</a></p>
+classification of messages as described below.<a href="#section-5.1-3" class="pilcrow">¶</a></p>
 <div id="in-time-messages">
 <section id="section-5.1.1">
           <h4 id="name-in-time-messages">
@@ -1663,7 +1655,7 @@ scope of this document.<a href="#section-5.1.1-2.1.1" class="pilcrow">¶</a></p>
           <h4 id="name-bounded-latency-messages">
 <a href="#section-5.1.2" class="section-number selfRef">5.1.2. </a><a href="#name-bounded-latency-messages" class="section-name selfRef">Bounded latency messages</a>
           </h4>
-<p id="section-5.1.2-1">Bounded latency message requests correspond to a given earliest and latest arrival time, or a range of time in which that operation must take place.
+<p id="section-5.1.2-1">Bounded latency message requests correspond to a given the earliest and the latest arrival time, or a range of time in which that operation must take place.
 This type of request is different from in-time messages because of the additional constraint that message should not be processed too early but processed in a given interval.<a href="#section-5.1.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1774,30 +1766,36 @@ services.<a href="#section-5.2.2-2" class="pilcrow">¶</a></p>
       <h2 id="name-ocn-examples-and-realizatio">
 <a href="#section-6" class="section-number selfRef">6. </a><a href="#name-ocn-examples-and-realizatio" class="section-name selfRef">OCN Examples and Realizations</a>
       </h2>
-<p id="section-6-1">This section discusses different types of OCNs. This section is include to appreciate the need for OCNs.<a href="#section-6-1" class="pilcrow">¶</a></p>
-<div id="level-one-operations-and-control">
+<p id="section-6-1">This section discusses different types of OCNs. This section is include to appreciate the need for OCNs.
+OCN networks may be deployed at different network layers as discussed below.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<div id="physical-layer">
 <section id="section-6.1">
-        <h3 id="name-level-one-operations-and-co">
-<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-level-one-operations-and-co" class="section-name selfRef">Level one Operations and Control</a>
+        <h3 id="name-physical-layer">
+<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-physical-layer" class="section-name selfRef">Physical Layer</a>
         </h3>
-<p id="section-6.1-1">Level one refers to the physical layer or. It is the most trivial example of an operations and control in which an actuator or sensor is directly accessed from a controller. For example, turning the switch on or off manually, turns a bulb, fan, etc on/off. The field-devices are connected to controller directly over a wire. Such type of scenarios are not part of the OCN, as there is no network involved.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+<p id="section-6.1-1">An OCN network may be implemented fully on the layer one of the protocol stack. It is the most trivial example of an operations and control in which an actuator or sensor is directly accessed from a controller. For example, turning the switch on or off manually, turns a bulb, fan, etc on/off. The field-devices are connected to controller directly over a wire. Such type of scenarios are not part of the OCN, as there is no network involved.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="local-area-operations-and-control">
+<div id="media-layer">
 <section id="section-6.2">
-        <h3 id="name-local-area-operations-and-c">
-<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-local-area-operations-and-c" class="section-name selfRef">Local Area Operations and Control</a>
+        <h3 id="name-media-layer">
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-media-layer" class="section-name selfRef">Media Layer</a>
         </h3>
-<p id="section-6.2-1">In factory floors or plants, recently realtime Ethernet networks are deployed to meet some of the characteristics of OCN. The layer 2 solutions are difficult to extend and generalize beyond a certain distance. It is difficult to easily integrate cloud-based remote control and operations specific use cases in such cases.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
+<p id="section-6.2-1">An OCN network may be implemented on the layer 2 as a local area network.  In factory floors or plants, recently realtime Ethernet networks are deployed to meet some of the characteristics of OCN. The layer 2 solutions are difficult to extend and generalize beyond a certain distance. It is difficult to easily integrate cloud-based remote control and operations specific use cases in such cases.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
 <p id="section-6.2-2">Other media options include 5G radio communications that also support many of the OCN attributes. Furthermore, OCN could complement these access network technologies by connecting them over wide areas for edge and cloud related accesses.<a href="#section-6.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="large-scale-network-level-operations-and-control">
+<div id="network-layer">
 <section id="section-6.3">
-        <h3 id="name-large-scale-network-level-o">
-<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-large-scale-network-level-o" class="section-name selfRef">Large Scale Network Level Operations and Control</a>
+        <h3 id="name-network-layer">
+<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-network-layer" class="section-name selfRef">Network Layer</a>
         </h3>
 <p id="section-6.3-1">Support for large scale OC solutions requires support for all the characteristics end-to-end which may include crossing through different networks as well as interconnection of operations and control access networks over the internetworks while meeting all the requirements. OCNs aim to achieve this. i.e., providing a network level approach to connecting sensors, actuators and controller from anywhere and meeting application constraints.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
+<p id="section-6.3-2">An OCN may be implemented in the layer 3 using packet switching technologies and protocols. The layer-3 OCN requires support for all the
+   characteristics of messages as described above, especially for real-time end-to-end timing constraints. Layer-3 OCNs may be deployed as a single autonomous system or as part of a single autonomous system. It may involve crossing through
+   different networks as well as interconnection of operations and
+   control access networks while meeting all the
+   requirements. Layer 3 OCNs are aimed at large-scale, in comparison with Layer 2 OCN, and physically distributed manufacturing facilities and/or applications involving end devices of frequent mobility.<a href="#section-6.3-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1833,6 +1831,10 @@ services.<a href="#section-5.2.2-2" class="pilcrow">¶</a></p>
 <dt id="DETNET-ARCH">[DETNET-ARCH]</dt>
       <dd>
 <span class="refAuthor">Finn, N.</span>, <span class="refAuthor">Thubert, P.</span>, <span class="refAuthor">Varga, B.</span>, and <span class="refAuthor">J. Farkas</span>, <span class="refTitle">"Deterministic Networking Architecture"</span>, <span class="seriesInfo">RFC 8655</span>, <span class="seriesInfo">DOI 10.17487/RFC8655</span>, <time datetime="2019-10" class="refDate">October 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8655">https://www.rfc-editor.org/rfc/rfc8655</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NIST-OT">[NIST-OT]</dt>
+      <dd>
+<span class="refTitle">"*** BROKEN REFERENCE ***"</span>. </dd>
 <dd class="break"></dd>
 <dt id="PTP-GRID">[PTP-GRID]</dt>
       <dd>
